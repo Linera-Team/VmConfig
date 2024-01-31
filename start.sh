@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ..
+
 # Update system package list
 sudo apt update
 
