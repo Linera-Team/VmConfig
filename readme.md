@@ -63,7 +63,6 @@ Para conectar ao ambiente virtual, você antes precisa abrir o caminho atraves d
 
 ```
 ssh -L 59000:localhost:5901 -C -N -l root [ip_da_VM]
-
 ```
 
 Conecte-se ao ambiente virtual pelo RealVNC com o ip:
