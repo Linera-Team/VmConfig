@@ -39,3 +39,5 @@ em seguida:
 ```
 ./start.sh
 ```
+
+#Fique Atento para qualquer interação requerida no console, algumas partes precisam de sua atenção durante a instalação.
