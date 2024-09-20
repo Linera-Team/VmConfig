@@ -1,15 +1,8 @@
-\*\*
-
 ## PRÉ REQUISITOS
 
-\*\*
 Para acessar o ambiente virtual, você precisa usar um software chamado RealVNC, você pode encontrar o download [aqui](https://www.realvnc.com/pt/connect/download/viewer/)
 
-\*\*
-
 ## Instruções para executar a pre configuração do servidor linux.
-
-\*\*
 
 Primeiro instale o Git:
 
@@ -49,11 +42,7 @@ em seguida:
 ./start.sh
 ```
 
-\*\*
-
 ## Fique Atento para qualquer interação requerida no console, algumas partes precisam de sua atenção durante a instalação.
-
-\*\*
 
 Ao chegar na seguinte tela pode selecionar qualquer uma das duas opções, eu seleciono a primeira de qualquer forma:
 
