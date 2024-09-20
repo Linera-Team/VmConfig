@@ -14,85 +14,39 @@ Para acessar o ambiente virtual, você precisa usar um software chamado RealVNC,
 Primeiro instale o Git:
 
 ```
-
-
-
 sudo apt-get update
-
-
-
-
-
 sudo apt-get install git-all
-
-
-
-
-
 git version
-
-
-
 ```
 
 depois clone o repositorio com o arquivo de configuração:
 
 ```
-
-
-
 git clone https://github.com/Linera-Team/VmConfig.git
-
-
-
 ```
 
 Navegue ate a pasta do vmconfig
 
 ```
-
-
-
 cd VmConfig
-
-
-
 ```
 
 e troque a branch para interface-grafica
 
 ```
-
-
-
 git checkout interface-grafica
-
-
-
 ```
 
 e então execute
 
 ```
-
-
-
 chmod +x start.sh
-
-
-
 ```
 
 em seguida:
 
 ```
-
-
-
 ./start.sh
-
-
-
 ```
 
 \*\*
@@ -108,7 +62,6 @@ Ao chegar na seguinte tela pode selecionar qualquer uma das duas opções, eu se
 Para conectar ao ambiente virtual, você antes precisa abrir o caminho atraves do ssh com o comando:
 
 ```
-
 ssh -L 59000:localhost:5901 -C -N -l root [ip_da_VM]
 
 ```
