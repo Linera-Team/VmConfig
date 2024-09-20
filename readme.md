@@ -59,3 +59,9 @@ Conecte-se ao ambiente virtual pelo RealVNC com o ip:
 ```
 localhost:59000
 ```
+
+Execute os serviços usando:
+
+```
+pm2 start --name "[nome_da_roleta]" ts-node -- [caminho_da_roleta]
+```
