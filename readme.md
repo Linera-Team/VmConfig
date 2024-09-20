@@ -1,10 +1,25 @@
-Instruções para executar a pre configuração do servidor linux.
+\*\*
+
+## PRÉ REQUISITOS
+
+\*\*
+Para acessar o ambiente virtual, você precisa usar um software chamado RealVNC, você pode encontrar o download [aqui](https://www.realvnc.com/pt/connect/download/viewer/)
+
+\*\*
+
+## Instruções para executar a pre configuração do servidor linux.
+
+\*\*
 
 Primeiro instale o Git:
 
 ```
 
+
+
 sudo apt-get update
+
+
 
 
 
@@ -12,7 +27,11 @@ sudo apt-get install git-all
 
 
 
+
+
 git version
+
+
 
 ```
 
@@ -20,7 +39,11 @@ depois clone o repositorio com o arquivo de configuração:
 
 ```
 
+
+
 git clone https://github.com/Linera-Team/VmConfig.git
+
+
 
 ```
 
@@ -28,7 +51,11 @@ Navegue ate a pasta do vmconfig
 
 ```
 
+
+
 cd VmConfig
+
+
 
 ```
 
@@ -36,7 +63,11 @@ e troque a branch para interface-grafica
 
 ```
 
+
+
 git checkout interface-grafica
+
+
 
 ```
 
@@ -44,7 +75,11 @@ e então execute
 
 ```
 
+
+
 chmod +x start.sh
+
+
 
 ```
 
@@ -52,7 +87,11 @@ em seguida:
 
 ```
 
+
+
 ./start.sh
+
+
 
 ```
 
@@ -61,5 +100,21 @@ em seguida:
 ## Fique Atento para qualquer interação requerida no console, algumas partes precisam de sua atenção durante a instalação.
 
 \*\*
+
 Ao chegar na seguinte tela pode selecionar qualquer uma das duas opções, eu seleciono a primeira de qualquer forma:
+
 ![](https://i.imgur.com/FyIwMww.png)
+
+Para conectar ao ambiente virtual, você antes precisa abrir o caminho atraves do ssh com o comando:
+
+```
+
+ssh -L 59000:localhost:5901 -C -N -l root [ip_da_VM]
+
+```
+
+Conecte-se ao ambiente virtual pelo RealVNC com o ip:
+
+```
+localhost:59000
+```
