@@ -16,6 +16,12 @@ depois clone o repositorio com o arquivo de configuração:
 git clone https://github.com/Linera-Team/VmConfig.git
 ```
 
+e troque a branch para interface-grafica
+
+```
+git checkout interface-grafica
+```
+
 acese a pasta:
 
 ```

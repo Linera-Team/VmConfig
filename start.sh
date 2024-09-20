@@ -51,15 +51,6 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
-# Install Docker Engine, CLI, and plugins
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-# Verify Docker installation
-sudo docker run hello-world
-
-# Pull Node image from Docker Hub
-docker pull node
-
 # Clone specific GitHub repository
 gh repo clone Linera-Team/LineraGamesProvider
 
@@ -67,4 +58,39 @@ gh repo clone Linera-Team/LineraGamesProvider
 cd LineraGamesProvider/
 
 # Switch to a specific branch
-git switch 2.0
+git switch betfast-producao
+
+cd ..
+
+sudo apt update && sudo apt upgrade
+
+sudo apt install curl apt-transport-https gdebi
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo gdebi google-chrome*
+
+sudo apt update
+sudo apt install -y xfce4 xfce4-goodies
+sudo apt install -y tightvncserver
+
+vncserver
+vncserver -kill :1
+
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+
+# Adiciona o conteúdo no arquivo ~/.vnc/xstartup
+echo "#!/bin/bash
+xrdb \$HOME/.Xresources
+startxfce4 &" > ~/.vnc/xstartup
+
+# Torna o arquivo executável
+chmod +x ~/.vnc/xstartup
+
+vncserver -localhost
+
+npm install pm2 -g
+
+npm install ts-node -g
+
+npm install typescript -g
