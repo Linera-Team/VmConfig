@@ -42,7 +42,7 @@ em seguida:
 ./start.sh
 ```
 
-## Fique Atento para qualquer interação requerida no console, algumas partes precisam de sua atenção durante a instalação.
+## Fique Atento para qualquer interação requerida no console, algumas partes precisam de sua atenção durante a instalação. Uma delas é o pedido de uma senha para conexão do ambiente virtual
 
 Ao chegar na seguinte tela pode selecionar qualquer uma das duas opções, eu seleciono a primeira de qualquer forma:
 
@@ -59,6 +59,11 @@ Conecte-se ao ambiente virtual pelo RealVNC com o ip:
 ```
 localhost:59000
 ```
+
+![](https://i.imgur.com/tfDqZoH.png)
+![](https://i.imgur.com/u3WOBPd.png)
+![](https://i.imgur.com/ngS2Rxg.png)
+![](https://i.imgur.com/ST3KZEp.png)
 
 Execute os serviços usando:
 
